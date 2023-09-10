@@ -3,11 +3,11 @@
   <title>agingse&#39;s Wiki</title>
   
   <subtitle>乱七八糟集合地</subtitle>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="https://agingse.github.io/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://agingse.github.io/"/>
   <updated>2023-09-10T16:17:59.723Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://agingse.github.io/</id>
   
   <author>
     <name>agingse</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/wiki/hello-world/"/>
-    <id>http://yoursite.com/wiki/hello-world/</id>
+    <link href="https://agingse.github.io/wiki/hello-world/"/>
+    <id>https://agingse.github.io/wiki/hello-world/</id>
     <published>2023-09-10T16:17:59.723Z</published>
     <updated>2023-09-10T16:17:59.723Z</updated>
     
