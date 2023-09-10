@@ -170,6 +170,60 @@
 </aside>
             
             <section id="main">
+        <article id="post-博客错误合集持续更新......" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h1 id="博客错误合集：（持续更新……）"><a href="#博客错误合集：（持续更新……）" class="headerlink" title="博客错误合集：（持续更新……）"></a>博客错误合集：（持续更新……）</h1><h2 id="npm命令遇到6-vulnerabilities-2-low-1-high-3-critical"><a href="#npm命令遇到6-vulnerabilities-2-low-1-high-3-critical" class="headerlink" title="npm命令遇到6 vulnerabilities (2 low, 1 high, 3 critical)"></a>npm命令遇到6 vulnerabilities (2 low, 1 high, 3 critical)</h2><p>按照命令行提示输入<code>npm audit</code></p>
+<p>npm audit report如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">markdown  *</span><br><span class="line">Regular Expression Denial of Service in markdown - https://github.com/advisories/GHSA-wx77-rp39-c6vg</span><br><span class="line">fix available via `npm audit fix --force`</span><br><span class="line">Will install hexo-renderer-swig@1.1.0, which is a breaking change</span><br><span class="line">node_modules/markdown</span><br><span class="line">  swig-extras  *</span><br><span class="line">  Depends on vulnerable versions of markdown</span><br><span class="line">  node_modules/swig-extras</span><br><span class="line">    hexo-renderer-swig  *</span><br><span class="line">    Depends on vulnerable versions of swig-extras</span><br><span class="line">    Depends on vulnerable versions of swig-templates</span><br><span class="line">    node_modules/hexo-renderer-swig</span><br><span class="line"></span><br><span class="line">minimist  &lt;=0.2.3</span><br><span class="line">Severity: critical</span><br><span class="line">Prototype Pollution in minimist - https://github.com/advisories/GHSA-vh95-rmgr-6w4m</span><br><span class="line">Prototype Pollution in minimist - https://github.com/advisories/GHSA-xvch-5gv4-984h</span><br><span class="line">fix available via `npm audit fix --force`</span><br><span class="line">Will install hexo-renderer-swig@1.1.0, which is a breaking change</span><br><span class="line">node_modules/optimist/node_modules/minimist</span><br><span class="line">  optimist  &gt;=0.6.0</span><br><span class="line">  Depends on vulnerable versions of minimist</span><br><span class="line">  node_modules/optimist</span><br><span class="line">    swig-templates  *</span><br><span class="line">    Depends on vulnerable versions of optimist</span><br><span class="line">    node_modules/swig-templates</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">6 vulnerabilities (2 low, 1 high, 3 critical)</span><br><span class="line"></span><br><span class="line">To address all issues (including breaking changes), run:</span><br><span class="line">  npm audit fix --force</span><br></pre></td></tr></table></figure>
+
+<p>按照命令行提示继续输入<code>npm audit fix --force</code>没有用，在仔细查看错误报告后，发现 <code>hexo-renderer-swig</code>插件出现了问题。解决方法如下：</p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/wiki/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0....../#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
