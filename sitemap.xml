@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://agingse.github.io/wiki/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0....../</loc>
+    <loc>https://agingse.github.io/wiki/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/</loc>
     
     <lastmod>2023-09-10</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://agingse.github.io/tags/index.html</loc>
+    <loc>https://agingse.github.io/about/index.html</loc>
     
     <lastmod>2023-09-10</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://agingse.github.io/about/index.html</loc>
+    <loc>https://agingse.github.io/tags/index.html</loc>
     
     <lastmod>2023-09-10</lastmod>
     
@@ -54,6 +54,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://agingse.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2023-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 
   
