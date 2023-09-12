@@ -18,8 +18,8 @@
   
   <entry>
     <title>博客错误合集</title>
-    <link href="https://agingse.github.io/wiki/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/"/>
-    <id>https://agingse.github.io/wiki/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/</id>
+    <link href="https://agingse.github.io/wiki/%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/"/>
+    <id>https://agingse.github.io/wiki/%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/</id>
     <published>2023-09-10T18:00:08.000Z</published>
     <updated>2023-09-10T18:07:58.270Z</updated>
     
@@ -33,6 +33,8 @@
     
     
     
+    <category term="学习" scheme="https://agingse.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
     
     <category term="博客" scheme="https://agingse.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
@@ -40,8 +42,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://agingse.github.io/wiki/hello-world/"/>
-    <id>https://agingse.github.io/wiki/hello-world/</id>
+    <link href="https://agingse.github.io/wiki/%E6%9D%82/hello-world/"/>
+    <id>https://agingse.github.io/wiki/%E6%9D%82/hello-world/</id>
     <published>2023-09-10T16:17:59.723Z</published>
     <updated>2023-09-10T16:17:59.723Z</updated>
     
@@ -54,6 +56,8 @@
       
     
     
+    
+    <category term="杂" scheme="https://agingse.github.io/categories/%E6%9D%82/"/>
     
     
   </entry>

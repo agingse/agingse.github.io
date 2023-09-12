@@ -165,6 +165,102 @@
                 <aside id="sidebar">
    
         
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>分类</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            学习
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/wiki/%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/">博客错误合集</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            杂
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/wiki/%E6%9D%82/hello-world/">Hello World</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
     
     <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
@@ -187,7 +283,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="timeline-article-title" href="/wiki/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/">博客错误合集</a>
+            <a class="timeline-article-title" href="/wiki/%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/">博客错误合集</a>
         </h1>
     
 
@@ -196,13 +292,18 @@
                     
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/">
+        <a href="/wiki/%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/">
             <time datetime="2023-09-10T18:00:08.000Z" itemprop="datePublished">2023-09-11</time>
         </a>
     </div>
 
 
                     
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+    </div>
+
                     
     <div class="article-tag">
         <i class="fa fa-tag"></i>
@@ -220,7 +321,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="timeline-article-title" href="/wiki/hello-world/">Hello World</a>
+            <a class="timeline-article-title" href="/wiki/%E6%9D%82/hello-world/">Hello World</a>
         </h1>
     
 
@@ -229,13 +330,18 @@
                     
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/wiki/hello-world/">
+        <a href="/wiki/%E6%9D%82/hello-world/">
             <time datetime="2023-09-10T16:17:59.723Z" itemprop="datePublished">2023-09-11</time>
         </a>
     </div>
 
 
                     
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E6%9D%82/">杂</a>
+    </div>
+
                     
                 </div>
                 
